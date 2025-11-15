@@ -8,4 +8,10 @@ public interface PaymentGateway {
 * @param dollars amount in dollars
 */
 void pay(double dollars);
+
+/**
+* Refund the given amount in dollars (e.g., 9.50).
+* @param dollars amount in dollars to refund
+*/
+void refund(double dollars);
 }

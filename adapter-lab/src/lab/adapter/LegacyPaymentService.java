@@ -14,9 +14,18 @@ this.merchantId = merchantId;
 */
 public void makePayment(int cents) {
 // Simulate some legacy behavior and print to stdout
-System.out.println("[LegacyPaymentService] Merchant: " + merchantId
-+ " | Payment received: " + cents + " cents");
+System.out.println("[LegacyPaymentService] Merchant: " + merchantId + " | Payment received: " + cents + " cents");
 // Pretend some internal checks happen here...
 System.out.println("[LegacyPaymentService] Status: PAYMENT_OK");
+}
+
+/**
+* Simulates refunding a payment in integer cents.
+*/
+public void refundPayment(int cents) {
+// Simulate refund operation
+System.out.println("[LegacyPaymentService] Merchant: " + merchantId + " | Refund issued: " + cents + " cents");
+// Pretend some internal checks happen here...
+System.out.println("[LegacyPaymentService] Status: REFUND_OK");
 }
 }
